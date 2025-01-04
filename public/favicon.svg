@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="512" height="512" rx="100" fill="#444CED"/>
+  
+  <!-- Luggage tag shape -->
+  <path d="M382 156H130C119 156 110 165 110 176V376C110 387 119 396 130 396H382C393 396 402 387 402 376V176C402 165 393 156 382 156Z" fill="white"/>
+  
+  <!-- Tag hole -->
+  <circle cx="130" cy="186" r="15" fill="#444CED"/>
+  
+  <!-- Text -->
+  <text x="256" y="240" font-family="Arial Black, sans-serif" font-size="72" font-weight="900" text-anchor="middle" fill="#444CED" style="font-style: italic;">BAG</text>
+  <text x="256" y="340" font-family="Arial Black, sans-serif" font-size="36" font-weight="900" text-anchor="middle" fill="#444CED" style="font-style: italic;">POLICIES</text>
+  
+  <!-- Checkmark -->
+  <circle cx="360" cy="220" r="20" fill="#22C55E"/>
+  <path d="M350 220L357 227L370 214" stroke="white" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

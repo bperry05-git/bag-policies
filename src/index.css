@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  
+  .clip-tag-left {
+    clip-path: polygon(12px 0, 100% 0, 100% 100%, 12px 100%, 0 50%);
+  }
+  
+  .animate-blob {
+    animation: blob 7s infinite;
+  }
+  
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  
+  @keyframes twinkle {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 1; }
+  }
+  
+  .animate-twinkle {
+    animation: twinkle 3s ease-in-out infinite;
+  }
+
+  @keyframes flash {
+    0%, 100% { 
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    0.5% {
+      opacity: 1;
+      transform: scale(2);
+    }
+    1.5% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+    5% {
+      opacity: 0.2;
+      transform: scale(1);
+    }
+    6% {
+      opacity: 0;
+      transform: scale(0.1);
+    }
+  }
+
+  .animate-flash {
+    animation: flash 8s ease-out infinite;
+  }
+
+  @keyframes floodlight {
+    0%, 100% {
+      opacity: 0.6;
+      transform: scale(0.95) rotate(var(--tw-rotate));
+    }
+    50% {
+      opacity: 0.8;
+      transform: scale(1) rotate(var(--tw-rotate));
+    }
+  }
+
+  .animate-floodlight {
+    animation: floodlight 10s ease-in-out infinite;
+  }
+  
+  .animation-delay-6000 {
+    animation-delay: 6s;
+  }
+  
+  @keyframes blob {
+    0% {
+      transform: translate(0px, 0px) scale(1);
+    }
+    33% {
+      transform: translate(30px, -50px) scale(1.1);
+    }
+    66% {
+      transform: translate(-20px, 20px) scale(0.9);
+    }
+    100% {
+      transform: translate(0px, 0px) scale(1);
+    }
+  }
+}
